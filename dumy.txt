@@ -1,0 +1,80 @@
+  2 npm init
+   3 npm i express
+   4 node .\index.js
+   6 touch dockerfile
+   7 clear
+   8 docker build -t basic-app .
+  15 docker images
+  // Remove
+  16 docker image rm basic-app-125
+
+  // Forcefully Delete
+  22 docker image rm basic-app_12 -f
+
+  // Check the containers...
+
+  25 docker ps -a
+  26 docker container basic-app_11
+
+  //Remove the container
+  27 docker container rm basic-app_11
+  28 docker container rm basic-app_11 -f
+
+  // Delete all 
+  41 docker system prune -a
+
+
+
+  // Assign the version of image
+  50 docker build -t basic-app:v1 .
+  51 docker run --name basic-container-v1 -p 5000:5000 basic-app:v1
+
+
+  58 docker run --name basic-container-v1 -p 5000:5000 basic-app:v1
+  59 docker run --help
+  60 clear
+  61 docker ps -a
+  62 docker run basic-container-v1
+  63 docker start basic-container-v1
+  64 docker stop basic-container-v1
+ 
+ // using the command, run the container
+ docker run --name basic-container-v1 -p 5000:5000 basic-app:v1
+
+  51 docker run --name basic-container-v1 -p 5000:5000 basic-app:v1
+  56 docker image
+  57 docker images
+  59 docker run --help
+  60 clear
+  61 docker ps -a
+  63 docker start basic-container-v1
+  64 docker stop basic-container-v1
+
+  71 docker image rm basic-app -f
+  72 docker image rm basic-app:v1
+  73 docker images
+  74 npm i nodemon
+  75 npm run dev
+
+  90 docker run --name basic-container-v1 -p 5000:5000 --rm -v C:/Users/tayya/Desktop/basic-docker-app:/app basic-app:v1
+  91 docker run --name basic-container-v1 -p 5000:5000 --rm -v C:/Users/tayya/Desktop/basic-docker-app:/app basic-app:v1
+  92 docker compose up
+  93 history
+  94 docker build -t quickdeveloping/docker-practice .
+  95 docker login
+  96 docker push quickdeveloping/docker-practice
+  97 docker pull quickdeveloping/docker-practice
+  98 docker ps -a
+  99 docker container basic-container
+ 100 docker container rm basic-container
+ 101 docker ps -a
+ 102 docker images
+ 103 docker image rm 154b
+ 104 docker images
+
+
+C:\Users\tayya\Desktop\basic-docker-app\index.js
+
+
+
+
